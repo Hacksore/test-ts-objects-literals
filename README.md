@@ -1,0 +1,2 @@
+# test-ts-objects-literals
+
