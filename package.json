@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "bug": "esbuild --bundle --outfile=dist/bug.js bug-repro.ts && node dist/bug.js"
   },
   "devDependencies": {
+    "esbuild": "^0.19.2",
     "jsdom": "^22.1.0",
     "typescript": "^5.1.6",
     "vitest": "^0.34.2"
